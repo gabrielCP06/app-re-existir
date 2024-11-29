@@ -3,62 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página de denúncia para o aplicativo Re(Existir).">
-    <meta name="author" content="Equipe Re(Existir)">
-    <title>Denúncia - Re(Existir)</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Tela inicial do aplicativo, com acesso rápido a todos os módulos e funcionalidades.">
+    <title>Tela Inicial</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav>
-        <div class="logo">Re(Existir)</div>
-        <ul>
-            <li><a href="index.html" class="active">Sistema de Denúncia</a></li>
-            <li><a href="conhecimento.html">Página de Conhecimento</a></li>
-            <li><a href="rede_apoio.html">Rede de Apoio</a></li>
-            <li><a href="empregos.html">Empresas de Emprego</a></li>
-            <li><a href="configuracoes.html">Configurações</a></li>
-        </ul>
+    <!-- Barra de navegação no topo -->
+    <nav class="navbar">
+        <div class="logo">Minha Aplicação</div>
+        <div class="nav-icons">
+            <a href="html/configuracoes.html" title="Configurações"><i class="fas fa-cog"></i></a>
+            <a href="perfil.html" title="Perfil"><i class="fas fa-user"></i></a>
+        </div>
     </nav>
 
-    <!-- Header -->
-    <header>
-        <h1>Sistema de Denúncia</h1>
-        <p>Preencha o formulário para registrar sua denúncia.</p>
-    </header>
+    <!-- Conteúdo principal -->
+    <main class="home-content">
+        <h1>Bem-vinda!</h1>
+        <p>Explore as funcionalidades do aplicativo abaixo:</p>
+        <div class="cards-container">
+            <a href="html/denuncia.html" class="card">
+                <div class="card-icon"><i class="fas fa-exclamation-circle"></i></div>
+                <h2>Denúncia</h2>
+                <p>Denuncie de forma segura e confidencial.</p>
+            </a>
+            <a href="html/rede_apoio.html" class="card">
+                <div class="card-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                <h2>Rede de Apoio</h2>
+                <p>Encontre profissionais de apoio próximos.</p>
+            </a>
+            <a href="html/informacoes.html" class="card">
+                <div class="card-icon"><i class="fas fa-book"></i></div>
+                <h2>Informações</h2>
+                <p>Leia leis, informações e faça cursos.</p>
+            </a>
+            <a href="html/empregos.html" class="card">
+                <div class="card-icon"><i class="fas fa-briefcase"></i></div>
+                <h2>Empregos</h2>
+                <p>Explore vagas de emprego disponíveis.</p>
+            </a>
+        </div>
+    </main>
 
-    <!-- Form Section -->
-    <div class="form-container">
-        <h2>Registrar Denúncia</h2>
-        <form id="denuncia-form">
-            <label for="nome">Seu Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-
-            <label for="email">E-mail para contato (opcional):</label>
-            <input type="email" id="email" name="email">
-
-            <label for="telefone">Telefone para contato:</label>
-            <input type="tel" id="telefone" name="telefone" required>
-
-            <label for="local">Local da ocorrência:</label>
-            <input type="text" id="local" name="local" required>
-
-            <label for="descricao">Descrição da denúncia:</label>
-            <textarea id="descricao" name="descricao" rows="5" required></textarea>
-
-            <label for="evidencias">Evidências (fotos, vídeos, áudios):</label>
-            <input type="file" id="evidencias" name="evidencias" multiple>
-
-            <button type="submit">Enviar Denúncia</button>
-        </form>
-        <div id="feedback" class="hidden"></div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Re(Existir). Todos os direitos reservados. <a href="#">Política de Privacidade</a></p>
+    <!-- Menu inferior -->
+    <footer class="bottom-menu">
+        <a href="index.html" class="menu-item active"><i class="fas fa-home"></i><span>Início</span></a>
+        <a href="html/denuncia.html" class="menu-item"><i class="fas fa-exclamation-circle"></i><span>Denúncia</span></a>
+        <a href="html/rede_apoio.html" class="menu-item"><i class="fas fa-hand-holding-heart"></i><span>Rede de Apoio</span></a>
+        <a href="html/informacoes.html" class="menu-item"><i class="fas fa-book"></i><span>Informações</span></a>
+        <a href="html/empregos.html" class="menu-item"><i class="fas fa-briefcase"></i><span>Empregos</span></a>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

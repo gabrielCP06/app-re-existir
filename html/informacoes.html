@@ -3,29 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página de conhecimento com cursos, leis e informações úteis.">
+    <meta name="description" content="Página de informações com cursos, leis e dados úteis.">
     <meta name="author" content="Equipe Re(Existir)">
-    <title>Página de Conhecimento - Re(Existir)</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="conhecimento.css">
+    <title>Página de Informações - Re(Existir)</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <!-- Navbar -->
     <nav>
         <div class="logo">Re(Existir)</div>
         <ul>
-            <li><a href="index.html">Sistema de Denúncia</a></li>
-            <li><a href="conhecimento.html" class="active">Página de Conhecimento</a></li>
+            <li><a href="../index.html" class="active">Início</a></li>
+            <li><a href="denuncia.html" class="active">Denúncia</a></li>
             <li><a href="rede_apoio.html">Rede de Apoio</a></li>
-            <li><a href="empregos.html">Empresas de Emprego</a></li>
+            <li><a href="empregos.html">Empregos</a></li>
             <li><a href="configuracoes.html">Configurações</a></li>
         </ul>
     </nav>
 
     <!-- Header -->
     <header>
-        <h1>Página de Conhecimento</h1>
-        <p>Explore cursos, leis e informações úteis para empoderar sua jornada.</p>
+        <h1>Página de Informações</h1>
+        <p>Explore cursos, leis e dados úteis para empoderar sua jornada.</p>
     </header>
 
     <!-- Search Section -->
@@ -36,11 +35,11 @@
 
     <!-- Knowledge Section -->
     <div class="knowledge-container">
-        <h2>Categorias de Conhecimento</h2>
+        <h2>Categorias de Informações</h2>
         <div class="categories">
             <button class="category-btn" data-category="cursos">Cursos</button>
             <button class="category-btn" data-category="leis">Leis</button>
-            <button class="category-btn" data-category="informacoes">Informações</button>
+            <button class="category-btn" data-category="informacoes">Dados</button>
         </div>
 
         <div class="knowledge-list">
@@ -68,7 +67,7 @@
                 <a href="#" target="_blank">Leia Mais</a>
             </div>
 
-            <!-- Informações -->
+            <!-- Dados -->
             <div class="knowledge-item" data-category="informacoes">
                 <h3>Rede de Apoio Psicológico</h3>
                 <p>Encontre psicólogos especializados em violência de gênero.</p>
@@ -87,6 +86,6 @@
         <p>&copy; 2024 Re(Existir). Todos os direitos reservados. <a href="#">Política de Privacidade</a></p>
     </footer>
 
-    <script src="conhecimento.js"></script>
+    <script src="../js/informacoes.js"></script>
 </body>
 </html>

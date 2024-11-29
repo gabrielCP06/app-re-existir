@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personalize sua experiência no aplicativo Re(Existir) com configurações gerais.">
+    <title>Configurações Gerais</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../js/configuracoes.js" defer></script>
+
+    <style>
+        .form-container input[type="checkbox"],
+        .form-container input[type="radio"] {
+            width: 5%;
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Re(Existir)</div>
+        <ul>
+            <li><a href="../index.html" class="active">Início</a></li>
+            <li><a href="denuncia.html" class="active">Denúncia</a></li>
+            <li><a href="informacoes.html">Informações</a></li>
+            <li><a href="rede_apoio.html">Rede de Apoio</a></li>
+            <li><a href="empregos.html">Empregos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Configurações Gerais</h1>
+        <p>Personalize sua experiência no Re(Existir).</p>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="form-container">
+        <h2>Configurações</h2>
+        
+        <!-- Seção: Alteração de Dados Pessoais -->
+        <section class="settings-section">
+            <h3>Dados Pessoais</h3>
+            <form id="form-dados-pessoais">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+                <button type="submit" class="btn-primary">Salvar Alterações</button>
+            </form>
+        </section>
+
+        <!-- Seção: Preferências de Notificação -->
+        <section class="settings-section">
+            <h3>Preferências de Notificação</h3>
+            <form id="form-notificacoes">
+                <label>
+                    <input type="checkbox" id="notificacao-email" name="notificacao-email">
+                    Receber notificações por e-mail
+                </label>
+                <label>
+                    <input type="checkbox" id="notificacao-sms" name="notificacao-sms">
+                    Receber notificações por SMS
+                </label>
+                <label>
+                    <input type="checkbox" id="notificacao-ligacao" name="notificacao-ligacao">
+                    Receber notificações por ligação
+                </label>
+
+                <button type="submit" class="btn-primary">Salvar Preferências</button>
+            </form>
+        </section>
+
+        <!-- Seção: Tema -->
+        <section class="settings-section">
+            <h3>Tema do Aplicativo</h3>
+            <form id="form-tema">
+                <label>
+                    <input type="radio" name="tema" value="claro" checked>
+                    Tema Claro
+                </label>
+                <label>
+                    <input type="radio" name="tema" value="escuro">
+                    Tema Escuro
+                </label>
+
+                <button type="submit" class="btn-primary">Aplicar Tema</button>
+            </form>
+        </section>
+
+        <!-- Seção: Configurações de Segurança -->
+        <section class="settings-section">
+            <h3>Segurança</h3>
+            <form id="form-seguranca">
+                <label for="senha-atual">Senha Atual:</label>
+                <input type="password" id="senha-atual" name="senha-atual" placeholder="Digite sua senha atual" required>
+
+                <label for="nova-senha">Nova Senha:</label>
+                <input type="password" id="nova-senha" name="nova-senha" placeholder="Digite sua nova senha" required>
+
+                <label>
+                    <input type="checkbox" id="ativar-2fa" name="ativar-2fa">
+                    Ativar autenticação em duas etapas (2FA)
+                </label>
+
+                <button type="submit" class="btn-primary">Salvar Configurações de Segurança</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Re(Existir). Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
