@@ -104,7 +104,81 @@ header p {
     color: var(--color-primary);
 }
 
-/* Tela Inicial */
+/* Form Section */
+.form-container {
+    margin: 3rem auto;
+    padding: 2rem;
+    max-width: 700px;
+    background: var(--color-white);
+    box-shadow: 0 4px 6px var(--color-shadow);
+    border-radius: 10px;
+}
+
+.form-container h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--color-secondary);
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--color-darker);
+}
+
+.form-container input,
+.form-container textarea,
+.form-container select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--color-light-gray);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-container input[type="file"] {
+    padding: 0.3rem;
+}
+
+.form-container button {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.form-container button:hover {
+    background-color: var(--color-tertiary);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--color-light);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* TELA INICIAL */
 
 /* Estilo do conteúdo principal */
 .home-content {
@@ -194,167 +268,14 @@ header p {
     color: var(--color-light);
 }
 
-/* Form Section */
-.form-container {
-    margin: 3rem auto;
-    padding: 2rem;
-    max-width: 700px;
-    background: var(--color-white);
-    box-shadow: 0 4px 6px var(--color-shadow);
-    border-radius: 10px;
-}
 
-.form-container h2 {
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 1.5rem;
-    font-size: 1.8rem;
-    text-align: center;
-    color: var(--color-secondary);
-}
-
-.form-container label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    color: var(--color-darker);
-}
-
-.form-container input,
-.form-container textarea,
-.form-container select {
-    width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1.5rem;
-    border: 1px solid var(--color-light-gray);
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.form-container input[type="file"] {
-    padding: 0.3rem;
-}
-
-.form-container button {
-    background-color: var(--color-secondary);
-    color: var(--color-white);
-    border: none;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 100%;
-}
-
-.form-container button:hover {
-    background-color: var(--color-tertiary);
-}
-
+/* TELA DE DENÚNCIA */
 .hidden {
     display: none;
-}
+}/**/
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 2rem 1rem;
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    font-size: 0.9rem;
-}
 
-footer a {
-    color: var(--color-light);
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Estilo para a listagem de vagas */
-.job-list {
-    margin-top: 2rem;
-}
-
-.job-card {
-    background: var(--color-white);
-    border: 1px solid var(--color-light-gray);
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 4px 6px var(--color-shadow);
-}
-
-.job-card h4 {
-    font-size: 1.2rem;
-    color: var(--color-secondary);
-    margin-bottom: 0.5rem;
-}
-
-.job-card p {
-    margin-bottom: 0.5rem;
-}
-
-.no-jobs, .no-history {
-    text-align: center;
-    font-style: italic;
-    color: var(--color-muted);
-}
-
-/* Estilo para o histórico */
-.application-history ul {
-    list-style: none;
-    padding: 0;
-}
-
-.application-history ul li {
-    background: var(--color-gradient-light);
-    padding: 0.75rem;
-    margin-bottom: 0.5rem;
-    border-radius: 5px;
-}
-
-/* Estilo das configurações gerais */
-.settings-section {
-    margin-bottom: 2rem;
-}
-
-.settings-section h3 {
-    font-size: 1.5rem;
-    color: var(--color-secondary);
-    margin-bottom: 1rem;
-}
-
-.settings-section label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: var(--color-darker);
-    font-weight: normal;
-}
-
-.settings-section input[type="checkbox"],
-.settings-section input[type="radio"] {
-    margin-right: 0.5rem;
-}
-
-.dark-theme {
-    background: linear-gradient(to bottom, var(--color-dark-theme-bg1), var(--color-dark-theme-bg2));
-    color: var(--color-dark-theme-text);
-}
-
-.dark-theme nav {
-    background-color: #111;
-    color: var(--color-dark-theme-text);
-}
-
-.dark-theme footer {
-    background-color: #111;
-    color: var(--color-dark-theme-text);
-}
-
-/* Estilo adicional para a página de conhecimento */
-
+/* TELA DE INFORMAÇÕES */
 /* Search Section */
 .search-container {
     margin: 2rem auto;
@@ -445,49 +366,7 @@ footer a:hover {
     color: var(--color-secondary);
 }
 
-/* Estilo para a listagem de vagas */
-.job-list {
-    margin-top: 2rem;
-}
-
-.job-card {
-    background: var(--color-white);
-    border: 1px solid var(--color-light-gray);
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 4px 6px var(--color-shadow);
-}
-
-.job-card h4 {
-    font-size: 1.2rem;
-    color: var(--color-secondary);
-    margin-bottom: 0.5rem;
-}
-
-.job-card p {
-    margin-bottom: 0.5rem;
-}
-
-.no-jobs, .no-history {
-    text-align: center;
-    font-style: italic;
-    color: var(--color-muted);
-}
-
-/* Estilo para o histórico */
-.application-history ul {
-    list-style: none;
-    padding: 0;
-}
-
-.application-history ul li {
-    background: var(--color-gradient-light);
-    padding: 0.75rem;
-    margin-bottom: 0.5rem;
-    border-radius: 5px;
-}
-
+/* TELA DE REDE DE APOIO */
 /* Filter Section */
 .filter-section {
     padding: 2rem;
@@ -565,4 +444,87 @@ footer a:hover {
 
 .professional-card button:hover {
     background-color: var(--color-secondary);
+}
+
+/* TELA DE EMPREGOS */
+/* Estilo para a listagem de vagas */
+.job-list {
+    margin-top: 2rem;
+}
+
+.job-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-light-gray);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px var(--color-shadow);
+}
+
+.job-card h4 {
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.job-card p {
+    margin-bottom: 0.5rem;
+}
+
+.no-jobs, .no-history {
+    text-align: center;
+    font-style: italic;
+    color: var(--color-muted);
+}
+
+/* Estilo para o histórico */
+.application-history ul {
+    list-style: none;
+    padding: 0;
+}
+
+.application-history ul li {
+    background: var(--color-gradient-light);
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+}
+
+/* TELA DE CONFIGURAÇÕES */
+/* Estilo das configurações gerais */
+.settings-section {
+    margin-bottom: 2rem;
+}
+
+.settings-section h3 {
+    font-size: 1.5rem;
+    color: var(--color-secondary);
+    margin-bottom: 1rem;
+}
+
+.settings-section label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--color-darker);
+    font-weight: normal;
+}
+
+.settings-section input[type="checkbox"],
+.settings-section input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.dark-theme {
+    background: linear-gradient(to bottom, var(--color-dark-theme-bg1), var(--color-dark-theme-bg2));
+    color: var(--color-dark-theme-text);
+}
+
+.dark-theme nav {
+    background-color: #111;
+    color: var(--color-dark-theme-text);
+}
+
+.dark-theme footer {
+    background-color: #111;
+    color: var(--color-dark-theme-text);
 }
