@@ -1,0 +1,38 @@
+/* TELA DE CONFIGURAÇÕES */
+/* Estilo das configurações gerais */
+.settings-section {
+    margin-bottom: 2rem;
+}
+
+.settings-section h3 {
+    font-size: 1.5rem;
+    color: var(--color-secondary);
+    margin-bottom: 1rem;
+}
+
+.settings-section label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--color-darker);
+    font-weight: normal;
+}
+
+.settings-section input[type="checkbox"],
+.settings-section input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.dark-theme {
+    background: linear-gradient(to bottom, var(--color-dark-theme-bg1), var(--color-dark-theme-bg2));
+    color: var(--color-dark-theme-text);
+}
+
+.dark-theme nav {
+    background-color: #111;
+    color: var(--color-dark-theme-text);
+}
+
+.dark-theme footer {
+    background-color: #111;
+    color: var(--color-dark-theme-text);
+}

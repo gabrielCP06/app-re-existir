@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conecte-se com empresas oferecendo vagas de emprego. Filtre oportunidades e acompanhe seu histórico de candidaturas.">
+    <title>Re(Existir)</title>
+    <link rel="stylesheet" href="../css/empregos.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <script defer src="../js/empregos.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Re(Existir)</div>
+        <ul class="nav-links">
+            <li><a href="inicio.html">Início</a></li>
+            <li><a href="denuncia.html">Denúncia</a></li>
+            <li><a href="informacoes.html">Informações</a></li>
+            <li><a href="rede_apoio.html">Rede de Apoio</a></li>
+            <li><a href="empregos.html" class="active">Empregos</a></li>
+            <li><a href="configuracoes.html">Configurações</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Empresas Oferecedoras de Emprego</h1>
+        <p>Explore vagas e conecte-se com oportunidades que fazem a diferença.</p>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="form-container">
+        <h2>Encontre a sua próxima oportunidade</h2>
+
+        <!-- Filtros de Busca -->
+        <section class="filters">
+            <form id="job-search-form">
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria">
+                    <option value="" disabled selected>Selecione uma categoria</option>
+                    <option value="tecnologia">Tecnologia</option>
+                    <option value="educacao">Educação</option>
+                    <option value="saude">Saúde</option>
+                    <option value="administrativo">Administrativo</option>
+                </select>
+
+                <label for="localizacao">Localização:</label>
+                <input type="text" id="localizacao" name="localizacao" placeholder="Digite sua cidade ou estado">
+
+                <button type="submit" class="btn-primary">Buscar</button>
+            </form>
+        </section>
+
+        <!-- Listagem de Vagas -->
+        <section class="job-list">
+            <h3>Vagas Disponíveis</h3>
+            <div id="vagas-container">
+                <!-- As vagas serão inseridas dinamicamente via JavaScript -->
+                <p class="no-jobs">Use os filtros acima para encontrar vagas disponíveis.</p>
+            </div>
+        </section>
+
+        <!-- Histórico de Candidaturas -->
+        <section class="application-history">
+            <h3>Histórico de Candidaturas</h3>
+            <ul id="historico-container">
+                <!-- Histórico de candidaturas será gerado dinamicamente -->
+                <p class="no-history">Nenhuma candidatura enviada ainda.</p>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Re(Existir). Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

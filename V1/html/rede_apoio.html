@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rede de apoio para conectar psicólogos, assistentes sociais e advogados a usuários que precisam de suporte.">
+    <title>Re(Existir)</title>
+    <link rel="stylesheet" href="../css/rede_apoio.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <script defer src="../js/rede_apoio.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">Re(Existir)</div>
+        <ul>
+            <li><a href="inicio.html">Início</a></li>
+            <li><a href="denuncia.html">Denúncia</a></li>
+            <li><a href="informacoes.html">Informações</a></li>
+            <li><a href="rede_apoio.html" class="active">Rede de Apoio</a></li>
+            <li><a href="empregos.html">Empregos</a></li>
+            <li><a href="configuracoes.html">Configurações</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Rede de Apoio</h1>
+        <p>Conecte-se com profissionais que podem ajudar.</p>
+    </header>
+    <main class="support-container">
+        <section class="filter-section">
+            <h2>Filtros de Pesquisa</h2>
+            <form id="filter-form">
+                <label for="specialty">Especialidade:</label>
+                <select id="specialty" name="specialty">
+                    <option value="all">Todos</option>
+                    <option value="psychologist">Psicólogos</option>
+                    <option value="social-worker">Assistentes Sociais</option>
+                    <option value="lawyer">Advogados</option>
+                </select>
+                <label for="location">Localização:</label>
+                <input type="text" id="location" name="location" placeholder="Cidade ou Estado">
+                <button type="submit">Filtrar</button>
+            </form>
+        </section>
+        <section class="professionals-section">
+            <h2>Profissionais Disponíveis</h2>
+            <div class="professional-card">
+                <h3>Dr. João Silva</h3>
+                <p>Psicólogo</p>
+                <p><strong>Localização:</strong> São Paulo, SP</p>
+                <p><strong>Contato:</strong> <a href="mailto:joao@exemplo.com">joao@exemplo.com</a> | <a href="https://wa.me/5511999999999">WhatsApp</a> | (11) 99999-9999</p>
+                <button class="schedule-button" data-id="1">Agendar Consulta</button>
+            </div>
+            <div class="professional-card">
+                <h3>Dra. Maria Oliveira</h3>
+                <p>Assistente Social</p>
+                <p><strong>Localização:</strong> Rio de Janeiro, RJ</p>
+                <p><strong>Contato:</strong> <a href="mailto:maria@exemplo.com">maria@exemplo.com</a> | <a href="https://wa.me/5521999999999">WhatsApp</a> | (21) 99999-9999</p>
+                <button class="schedule-button" data-id="2">Agendar Consulta</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Re(Existir). Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

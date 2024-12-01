@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de denúncia para o aplicativo Re(Existir).">
+    <meta name="author" content="Equipe Re(Existir)">
+    <title>Re(Existir)</title>
+    <link rel="stylesheet" href="../css/denuncia.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <script defer src="../js/denuncia.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Re(Existir)</div>
+        <ul class="nav-links">
+            <li><a href="inicio.html">Início</a></li>
+            <li><a href="denuncia.html" class="active">Denúncia</a></li>
+            <li><a href="informacoes.html">Informações</a></li>
+            <li><a href="rede_apoio.html">Rede de Apoio</a></li>
+            <li><a href="empregos.html">Empregos</a></li>
+            <li><a href="configuracoes.html">Configurações</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Sistema de Denúncia</h1>
+        <p>Preencha o formulário para registrar sua denúncia.</p>
+    </header>
+
+    <!-- Form Section -->
+    <div class="form-container">
+        <h2>Registrar Denúncia</h2>
+        <form id="denuncia-form">
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail para contato (opcional):</label>
+            <input type="email" id="email" name="email">
+
+            <label for="telefone">Telefone para contato:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="local">Local da ocorrência:</label>
+            <input type="text" id="local" name="local" required>
+
+            <label for="descricao">Descrição da denúncia:</label>
+            <textarea id="descricao" name="descricao" rows="5" required></textarea>
+
+            <label for="evidencias">Evidências (fotos, vídeos, áudios):</label>
+            <input type="file" id="evidencias" name="evidencias" multiple>
+
+            <button type="submit">Enviar Denúncia</button>
+        </form>
+        <div id="feedback" class="hidden"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Re(Existir). Todos os direitos reservados. <a href="#">Política de Privacidade</a></p>
+    </footer>
+</body>
+</html>

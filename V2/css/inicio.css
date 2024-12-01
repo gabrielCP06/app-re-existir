@@ -1,0 +1,155 @@
+/* Variáveis de cores */
+:root {
+    --primary-color: #6200EA;
+    --secondary-color: #03DAC6;
+    --background-color: #F4F4F9;
+    --text-color: #333;
+    --light-text-color: #666;
+    --white: #FFF;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --shadow-hover: rgba(0, 0, 0, 0.2);
+}
+
+/* Reset e estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+    color: var(--white);
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: var(--white);
+    font-weight: 500;
+}
+
+nav ul li a:hover,
+nav ul li .active {
+    color: var(--secondary-color);
+}
+
+/* Hero Section */
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: 0 0 50px 50px;
+}
+
+header .hero-text h1 {
+    font-size: 2.5rem;
+}
+
+header .hero-text p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+/* Conteúdo principal */
+.home-content {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.home-content h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px var(--shadow-hover);
+}
+
+.card-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: var(--light-text-color);
+}
+
+/* Menu inferior */
+.bottom-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    color: var(--white);
+    box-shadow: 0 -2px 5px var(--shadow-color);
+}
+
+.menu-item {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.menu-item i {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.menu-item.active {
+    color: var(--secondary-color);
+}

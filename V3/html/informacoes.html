@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de informações com cursos, leis e dados úteis.">
+    <meta name="author" content="Equipe Re(Existir)">
+    <title>Re(Existir)</title>
+    <link rel="stylesheet" href="../css/informacoes.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <script defer src="../js/informacoes.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Re(Existir)</div>
+        <ul class="nav-links">
+            <li><a href="inicio.html">Início</a></li>
+            <li><a href="denuncia.html">Denúncia</a></li>
+            <li><a href="informacoes.html" class="active">Informações</a></li>
+            <li><a href="rede_apoio.html">Rede de Apoio</a></li>
+            <li><a href="empregos.html">Empregos</a></li>
+            <li><a href="configuracoes.html">Configurações</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Página de Informações</h1>
+        <p>Explore cursos, leis e dados úteis para empoderar sua jornada.</p>
+    </header>
+
+    <!-- Search Section -->
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Digite palavras-chave para buscar conteúdos...">
+        <button id="search-btn">Buscar</button>
+    </div>
+
+    <!-- Knowledge Section -->
+    <div class="knowledge-container">
+        <h2>Categorias de Informações</h2>
+        <div class="categories">
+            <button class="category-btn" data-category="cursos">Cursos</button>
+            <button class="category-btn" data-category="leis">Leis</button>
+            <button class="category-btn" data-category="informacoes">Dados</button>
+        </div>
+
+        <div class="knowledge-list">
+            <!-- Cursos -->
+            <div class="knowledge-item" data-category="cursos">
+                <h3>Curso de Autodefesa</h3>
+                <p>Aprenda técnicas básicas de autodefesa com instrutores qualificados.</p>
+                <a href="#" target="_blank">Saiba Mais</a>
+            </div>
+            <div class="knowledge-item" data-category="cursos">
+                <h3>Curso de Empoderamento Feminino</h3>
+                <p>Oferece ferramentas e conhecimento para fortalecer a confiança pessoal.</p>
+                <a href="#" target="_blank">Saiba Mais</a>
+            </div>
+
+            <!-- Leis -->
+            <div class="knowledge-item" data-category="leis">
+                <h3>Lei Maria da Penha</h3>
+                <p>Informações sobre a lei que protege mulheres contra violência doméstica.</p>
+                <a href="#" target="_blank">Leia Mais</a>
+            </div>
+            <div class="knowledge-item" data-category="leis">
+                <h3>Lei do Feminicídio</h3>
+                <p>Entenda como o crime de feminicídio é tratado no Brasil.</p>
+                <a href="#" target="_blank">Leia Mais</a>
+            </div>
+
+            <!-- Dados -->
+            <div class="knowledge-item" data-category="informacoes">
+                <h3>Rede de Apoio Psicológico</h3>
+                <p>Encontre psicólogos especializados em violência de gênero.</p>
+                <a href="#" target="_blank">Saiba Mais</a>
+            </div>
+            <div class="knowledge-item" data-category="informacoes">
+                <h3>Dicas para a Segurança Pessoal</h3>
+                <p>Conselhos práticos para melhorar sua segurança no dia a dia.</p>
+                <a href="#" target="_blank">Leia Mais</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Re(Existir). Todos os direitos reservados. <a href="#">Política de Privacidade</a></p>
+    </footer>
+</body>
+</html>

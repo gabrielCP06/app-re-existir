@@ -1,0 +1,183 @@
+/* Variáveis de cores */
+:root {
+    --color-primary: #4A148C;
+    --color-secondary: #6A1B9A;
+    --color-tertiary: #AB47BC;
+    --color-light: #E1BEE7;
+    --color-dark: #444;
+    --color-darker: #333;
+    --color-light-gray: #ccc;
+    --color-background: #fdfdfd;
+    --color-gradient-light: #f7f0f9;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-muted: #999;
+    --color-shadow: rgba(0, 0, 0, 0.1);
+    --color-shadow-hover: rgba(0, 0, 0, 0.2);
+    --color-dark-theme-bg1: #333;
+    --color-dark-theme-bg2: #222;
+    --color-dark-theme-text: #ddd;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--color-dark);
+    background: linear-gradient(to bottom, var(--color-background), var(--color-gradient-light));
+}
+
+/* Navbar */
+nav {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--color-light);
+}
+
+nav ul li .active {
+    color: var(--color-light);
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(to bottom, var(--color-secondary), var(--color-tertiary));
+    color: var(--color-white);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--color-white);
+    color: var(--color-secondary);
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-light);
+    color: var(--color-primary);
+}
+
+/* Form Section */
+.form-container {
+    margin: 3rem auto;
+    padding: 2rem;
+    max-width: 700px;
+    background: var(--color-white);
+    box-shadow: 0 4px 6px var(--color-shadow);
+    border-radius: 10px;
+}
+
+.form-container h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--color-secondary);
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--color-darker);
+}
+
+.form-container input,
+.form-container textarea,
+.form-container select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--color-light-gray);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-container input[type="file"] {
+    padding: 0.3rem;
+}
+
+.form-container button {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.form-container button:hover {
+    background-color: var(--color-tertiary);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--color-light);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
